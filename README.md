@@ -1,11 +1,11 @@
 # [WACV 2026] UniGaze: Towards Universal Gaze Estimation via Large-scale Pre-Training 
-> [[arxiv]](https://arxiv.org/pdf/2502.02307), [[online demo]](https://huggingface.co/spaces/UniGaze/UniGaze)
+> [[arxiv]](https://arxiv.org/pdf/2502.02307), [[project page]](https://ut-vision.github.io/UniGaze/), [[online demo]](https://huggingface.co/spaces/UniGaze/UniGaze) [[Huggface paper page]](https://huggingface.co/papers/2502.02307)
 
 <a href="https://jqin-home.github.io/">Jiawei Qin</a><sup>1</sup>, 
 <a href="https://www.ccmitss.com/zhang">Xucong Zhang</a><sup>2</sup>, 
 <a href="https://www.yusuke-sugano.info/">Yusuke Sugano</a><sup>1</sup>, 
 
-<sup>1</sup>The University of Tokyo, <sup>2</sup>Computer Vision Lab, Delft University of Technology 
+<sup>1</sup>The University of Tokyo, <sup>2</sup>Delft University of Technology 
 
 
 <img src="./teaser.png" width="800" alt="grid"/>
@@ -101,7 +101,7 @@ python predict_gaze_video.py \
 
 ---
 
-# Citation
+## Citation
 If you find our work useful for your research, please consider citing:
 
 ```
@@ -125,6 +125,13 @@ You may obtain a copy of the License at
 https://github.com/Xtra-Computing/ModelGo/blob/main/MGL/V2/MG-BY-NC-RAI/LICENSE
 
 A comprehensive introduction to the ModelGo license can be found here: https://www.modelgo.li/
+
+---
+
+## Beyond human eye gaze estimation:
+Our method also works for different "faces":
+
+<img src="./gaze_cat_dog.png" width="800" alt="grid"/>
 
 ---
 

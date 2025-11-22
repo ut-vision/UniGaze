@@ -1,0 +1,27 @@
+[project]
+name = "unigaze"
+version = "0.1.0"
+description = "UniGaze: lightweight loader that pulls pretrained weights from Hugging Face"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "Jiawei Qin" }, { name = "Xucong Zhang" }, { name = "Yusuke Sugano" }]
+dependencies = [
+  "huggingface_hub>=0.24",
+  "safetensors>=0.4",
+  "numpy>=1.21",
+  "timm==1.0.9",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/ut-vision/UniGaze"
+Repository = "https://github.com/ut-vision/UniGaze"
+Issues = "https://github.com/ut-vision/UniGaze/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["unigaze"]   # <- explicitly list installable package(s)

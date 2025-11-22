@@ -1,0 +1,180 @@
+ModelGo Attribution-NonCommercial-ResponsibleAI License
+Version 2.0, May 2025
+
+By exercising the rights granted in Section 2.1, You acknowledge and agree that You have 
+read, understood, and agree to be bound by the terms and conditions of this License. If You 
+do not agree to any terms and/or conditions of this License, then the Licensor grants You no 
+rights under this License.
+
+1.	DEFINITIONS
+
+"Complementary Materials" means the source code and scripts used to define, run, load, 
+benchmark and/or evaluate the Model, and prepare data for the purpose of training, pretraining, 
+fine-tuning and/or evaluation of the Model, and any tutorials, operating manuals, user guides 
+and/or documentation that guide users in using, operating, implementing and/or customising 
+the Model.
+
+"Derivative Materials" means all improvements, modifications or derivative works to the 
+Licensed Material or any part thereof, which are created or developed by You (either by 
+Yourself or jointly with other third parties), including any derivative model developed by 
+transferring patterns of weights, parameters, activations and/or Output from the Model, such as 
+through distillation methods or synthetic data generation techniques, in order to replicate, 
+approximate, or otherwise achieve functional behavior that is similar to the Model.
+
+"Distribution" (or "Distribute") means any transmission, publication, public performance, 
+sharing, or other methods of making the Licensed Materials, Derivative Materials and/or Output 
+available to a third party, including providing the Licensed Materials or any part thereof as a 
+hosted service or remotely accessible service, such as API-based access or web access.
+
+"Licensor" means the rights owner that is granting the License.
+
+"Licensed Materials" means the Model and Complementary Materials that are Distributed by 
+the Licensor under this License. The Licensed Materials do not include any datasets used for 
+pretraining, training, adapting, or evaluating the Model, which may or may not be made 
+available under a separate license.
+
+"Model" means the machine-learning constructs and/or assemblies licensed by the Licensor 
+under this License, including any checkpoints, learned weights, parameters (including optimizer 
+states) and the model architecture.
+
+"NonCommercial" means not primarily intended for or directed towards commercial advantage 
+or monetary compensation.
+
+"Output" means any information, data, and/or content, including but not limited to images, text, 
+text effects, audio files, and/or video files, generated through operation of the Model, or through 
+operation of any new model developed by transferring patterns from the Model.
+
+"You" (or "Your") means you, or any other person or entity you are entering into this license on 
+behalf of, provided you have the legal authority to bind such person or entity.
+
+2.	LICENSE RIGHTS
+
+2.1	Grant of Rights
+
+(a)	Subject to the conditions in Section 2.2 of this License, the Licensor hereby grants to 
+You a non-exclusive, non-sublicensable, revocable, royalty-free, worldwide license under 
+the relevant copyrights, patent rights, database rights, and any other intellectual property 
+rights to:
+
+(i)	make, have made, use, reproduce and Distribute the Licensed Materials;
+
+(ii)	use the Licensed Materials to create Derivative Materials; and
+
+(iii)	make, have made, use, reproduce and Distribute Derivative Materials;
+
+for NonCommercial purposes only.
+
+2.2	Conditions
+
+(a)	If You Distribute any of the Licensed Materials or Derivative Materials, You shall:
+
+(i)	provide a copy of this License with the Licensed Material or Derivative Materials;
+
+(ii)	in the case of Distributing Derivative Materials, provide as part of the Distribution, 
+prominent notices stating that You have modified the Licensed Materials and the 
+relevant date of such modification;
+
+(iii)	retain as part of the Distribution any existing copyright notice, attribution notice, 
+and/or any notice identifying the authors of the Licensed Materials and any 
+Derivative Materials.
+
+(b)	If You Distribute a collection of Output as a dataset generated wholly or partially using 
+the Licensed Materials and/or Derivative Materials, You shall provide a prominent notice 
+in the Distribution stating that the dataset is generated using the Licensed Materials 
+and/or Derivative Materials provided under this License.
+
+(c)	You agree not to use the Licensed Materials or any Derivative Materials:
+
+(i)	for any illegal or unlawful purposes, including in any way that violates any 
+applicable national, federal, state, local, or international law or regulation;
+
+(ii)	for the purpose of exploiting, harming, or attempting to exploit or harm minors in 
+any way;
+
+(iii)	for the purpose of generating, transmitting and/or disseminating computer code, 
+files, scripts and programs, including any malware and/or software, that is 
+intended or known to be harmful, destructive, disabling or which assists in or 
+enables theft, alteration, denial of service, unauthorised disclosure or destruction 
+or corruption of data, including viruses, worms, spyware, adware, keyloggers, 
+trojans, ransomware and any other type of threats;
+(iv)	for any fraudulent purpose, such as generating, transmitting and/or disseminating 
+verifiably false information and/or content;
+
+(v)	for the purpose of generating, transmitting and/or disseminating personal data with 
+the purpose of harming others;
+
+(vi)	for the purpose of generating, transmitting and/or disseminating information 
+(including, but not limited to, images, code, posts, articles), and placing the 
+information in any public context (including, but not limited to, bot generating 
+tweets) without expressly and intelligibly disclaiming that the information and/or 
+content is machine generated;
+
+(vii)	for any libelous, defamatory, obscene or threatening purposes;
+
+(viii)	for the purpose of impersonating or attempting to impersonate human beings for 
+the purposes of deception;
+
+(ix)	for the purpose of enabling and/or facilitating fully automated decision-making that 
+adversely impacts an individual’s legal rights or otherwise creates or modifies a 
+binding, enforceable obligation without expressly and intelligibly disclaiming that 
+the creation or modification of the obligation is machine generated;
+
+(x)	for the purpose of enabling and/or facilitating discrimination and/or harm against 
+individuals or groups based on online or offline social behavior or known or 
+predicted personal or personality characteristics;
+
+(xi)	for the purpose of exploiting any of the vulnerabilities of a specific group of 
+persons based on their age, social, physical, or mental characteristics, in order to 
+materially distort the behavior of a person pertaining to that group in a manner that 
+causes or is likely to cause that person or another person physical or 
+psychological harm;
+
+(xii)	for the purpose of enabling and/or facilitating discrimination against individuals or 
+groups based on legally protected characteristics or categories;
+
+(xiii)	for the purpose of providing medical advice or medical results interpretation that is 
+intended to be a substitute for professional medical advice, diagnosis, or treatment; 
+and
+
+(xiv)	for the purpose of enabling and/or facilitating fully automated decision-making in 
+the administration of justice, law enforcement, immigration, or asylum processes.
+
+2.3	Reservation of Rights
+
+You shall not refer to the Licensor or use the Licensor's trademarks, trade names, and service 
+marks, for any publicity, advertising or marketing purposes, without the Licensor's prior written 
+consent.
+
+3.	DISCLAIMER
+
+To the maximum extent permissible under applicable law, the Licensed Materials are provided 
+on an "as is" and "as available" basis without any representation or warranty of any kind 
+(whether express, implied, statutory or otherwise), including of merchantability, satisfactory 
+quality, fitness for a particular purpose, title, accuracy, correctness, absence of error, reliability, 
+timeliness, non-infringement of or compliance with any laws, regulations and/or third-party 
+rights, all of which are expressly disclaimed by the Licensor.
+
+4.	LIMITATION OF LIABILITY
+
+To the maximum extent permissible under applicable law, the Licensor shall not be liable for 
+any claims, damages, or any other liabilities, in any way arising out of or in connection with the 
+Licensed Materials, Derivative Materials, and/or Output, whether on an action or claim in 
+contract, tort (including negligence), breach of statutory duty or otherwise, even if the Licensor 
+has been advised of the possibility of such damages.
+
+5.	TERMINATION
+
+This License shall terminate immediately if You breach any material term and/or condition of 
+this License, or if You initiate any legal action against the Licensor alleging that the Licensed 
+Materials and/or Derivative Materials infringe any patent worldwide. Sections 3, 4 and 6 shall 
+survive the termination of this License.
+
+6.	MODIFICATION OF THIS LICENSE
+
+This License is Copyright © 2024 National University of Singapore. Permission is granted to 
+copy, distribute, or communicate this License without modification. Nothing in this License 
+permits You to modify this License as applied to the Licensed Materials. However, You may 
+modify the text of this License and copy, distribute or communicate Your modified version and 
+apply it to other original works of authorship, provided that You do not use the name "ModelGo" 
+for your version of the license and furnish a readable notice describing Your modifications to 
+this License.

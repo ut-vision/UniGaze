@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: unigaze
-Version: 0.1.0
+Version: 0.1.1
 Summary: UniGaze: lightweight loader that pulls pretrained weights from Hugging Face
 Author: Jiawei Qin, Xucong Zhang, Yusuke Sugano
 License: ModelGo Attribution-NonCommercial-ResponsibleAI License

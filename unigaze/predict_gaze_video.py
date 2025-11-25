@@ -3,7 +3,6 @@ import os, argparse
 import numpy as np
 from glob import glob
 from tqdm import tqdm
-from datetime import datetime
 from omegaconf import OmegaConf
 import cv2
 import torch
@@ -180,10 +179,6 @@ if __name__ == "__main__":
 
 	resize_factor = 0.5
 
-	now_day = datetime.now().strftime("%Y-%m-%d")
-	now_time = datetime.now().strftime("%H-%M-%S")
-
-
 	video_paths = sorted(glob(args.input_dir + '/*.mp4')) 
 	print("video_paths: ", video_paths)
 	for input_path in video_paths:
@@ -202,9 +197,9 @@ if __name__ == "__main__":
 		log_info += f'resolution: {width} x {height},   fps: {fps}\n'
 		
 		if args.output_dir is None:
-			output_dir = os.path.join( os.path.dirname(input_path), f'output', now_day, f'{now_time}')
+			output_dir = os.path.join( os.path.dirname(input_path), f'output')
 		else:
-			output_dir = os.path.join(args.output_dir, now_day, f'{now_time}')
+			output_dir = args.output_dir
 		os.makedirs(output_dir, exist_ok=True)
 		fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 		filename = input_name + "_pred.mp4"

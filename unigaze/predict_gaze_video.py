@@ -179,7 +179,11 @@ if __name__ == "__main__":
 
 	resize_factor = 0.5
 
-	video_paths = sorted(glob(args.input_dir + '/*.mp4')) 
+	## if input is a folder
+	if os.path.isdir(args.input_dir):
+		video_paths = sorted(glob(args.input_dir + '/*.mp4'))  + sorted(glob(args.input_dir + '/*.avi')) + sorted(glob(args.input_dir + '/*.mov')) + sorted(glob(args.input_dir + '/*.MP4'))
+	else:
+		video_paths = [args.input_dir]
 	print("video_paths: ", video_paths)
 	for input_path in video_paths:
 		input_name = os.path.basename(input_path).split('.')[0]

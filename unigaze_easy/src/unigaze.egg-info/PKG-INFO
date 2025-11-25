@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: unigaze
-Version: 0.1.1
+Version: 0.1.2
 Summary: UniGaze: lightweight loader that pulls pretrained weights from Hugging Face
 Author: Jiawei Qin, Xucong Zhang, Yusuke Sugano
 License: ModelGo Attribution-NonCommercial-ResponsibleAI License
@@ -193,7 +193,7 @@ License-File: LICENSE
 Requires-Dist: huggingface_hub>=0.24
 Requires-Dist: safetensors>=0.4
 Requires-Dist: numpy>=1.21
-Requires-Dist: timm==1.0.9
+Requires-Dist: timm==0.3.2
 Dynamic: license-file
 
 # UniGaze Easy Loader
@@ -206,9 +206,10 @@ A tiny, dependency-light **Python package** to load **UniGaze** pretrained model
 
 > Install a matching PyTorch first.
 
-** CUDA 12.8 example**
+
 ```bash
-pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
+pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118
+pip install timm==0.3.2
 pip install unigaze
 ```
 

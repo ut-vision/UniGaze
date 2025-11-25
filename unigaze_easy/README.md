@@ -8,9 +8,10 @@ A tiny, dependency-light **Python package** to load **UniGaze** pretrained model
 
 > Install a matching PyTorch first.
 
-** CUDA 12.8 example**
+
 ```bash
-pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
+pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118
+pip install timm==0.3.2
 pip install unigaze
 ```
 

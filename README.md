@@ -39,23 +39,16 @@ This repository contains the official PyTorch implementation of both **MAE pre-t
 
 ## Easy use UniGaze
 
-You can use UniGaze with the pip command: 
+You can install UniGaze with the pip command: 
 ```bash
+pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118
+pip install timm==0.3.2
 pip install unigaze
+pip install -r requirements.txt 
 ```
 You can find our UniGaze on the PyPI page: https://pypi.org/project/unigaze/
 
-
 ### Available Models
-
-<!-- We provide the following trained models:
-
-|   Filename   | Backbone |   Training Data   | Checkpoint |
-|--------------|----------|-------------------|------------|
-|`unigaze_b16_joint.pth.tar`  | UniGaze-B | *Joint Datasets* | [Download (Google Drive)](https://drive.google.com/file/d/1xdPbzAX8d3cPAMChFjRThryIWVp9Ng_f/view?usp=sharing) |
-|`unigaze_L16_joint.pth.tar`  | UniGaze-L | *Joint Datasets* | [Download (Google Drive)](https://drive.google.com/file/d/1JR20_iGTU8pSXtKIC-_swiSRImWLAbBC/view?usp=sharing) |
-|`unigaze_h14_joint.pth.tar`  | UniGaze-H | *Joint Datasets* | [Download (Google Drive)](https://drive.google.com/file/d/16z_Y8_yi53xTw_-5Pw9H4jjAOPebIFdA/view?usp=sharing) | 
-|`unigaze_h14_cross_X.pth.tar`| UniGaze-H |  ETH-XGaze       | [Download (Google Drive)](https://drive.google.com/file/d/1BVYGOK5NwXUPr63DnbYGeQ_yqlevv9VR/view?usp=sharing) | -->
 
 |   Model name   | Backbone |   Training Data   | 
 |----------------|----------|-------------------|
@@ -82,18 +75,6 @@ python predict_gaze_video.py \
 ``` 
 
 
-## Installation from source
-If you want to re-implement the experiments, install the required dependencies, run:
-```bash
-# install PyTorch 
-pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118 
-pip install -r requirements.txt 
-
-## To align with the newer unigaze pip package, you can also try newer version
-pip install torch==2.7.0 torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu128
-## numpy==2.0.2 and timm==1.0.9
-```
-
 ## Pre-training (MAE)
 Please refer to [MAE Pre-Training](./MAE/README.md).
 
@@ -103,23 +84,14 @@ For detailed training instructions, please refer to [UniGaze Training](./unigaze
 ---
 
 
-<!-- 
 ### Loading Pretrained Models
 - You can refer to [load_gaze_model.ipynb](./unigaze/load_gaze_model.ipynb) for instructions on loading the model and integrating it into your own codebase.
   - If you want to load the MAE, use `custom_pretrained_path` arguments.
-  - If you want to load the UniGaze (MAE + gaze_fc), directly use `load_state_dict`
 
 ```python
 ## Loading MAE-backbone only - this will not load the gaze_fc
 mae_h14 = MAE_Gaze(model_type='vit_h_14', custom_pretrained_path='checkpoints/mae_h14/mae_h14_checkpoint-299.pth')
-
-## Loading UniGaze
-unigaze_h14_crossX = MAE_Gaze(model_type='vit_h_14') ## custom_pretrained_path does not matter because it will be overwritten by the UniGaze weight
-weight = torch.load('logs/unigaze_h14_cross_X.pth.tar', map_location='cpu')['model_state']
-unigaze_h14_crossX.load_state_dict(weight, strict=True)
 ```
- -->
-
 
 ---
 

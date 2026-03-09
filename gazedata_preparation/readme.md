@@ -128,4 +128,5 @@ python normalize_gaze360.py \
 
 
 **Example: Original Crop (left) vs. Normalized Patch (right)**
+
 <img src="gaze360_example.jpg" width=500>

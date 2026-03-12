@@ -1,5 +1,5 @@
 # [WACV 2026] UniGaze: Towards Universal Gaze Estimation via Large-scale Pre-Training 
-> [[arxiv]](https://arxiv.org/pdf/2502.02307), 
+> [[arxiv]](https://arxiv.org/pdf/2502.02307),  
 [[project page]](https://ut-vision.github.io/UniGaze/), 
 [[online demo]](https://huggingface.co/spaces/UniGaze/UniGaze),
 [[Huggingface paper page]](https://huggingface.co/papers/2502.02307), 

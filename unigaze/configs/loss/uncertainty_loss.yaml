@@ -1,0 +1,4 @@
+_target_: criteria.gaze_loss.UncertaintyAwareLoss
+base_loss: l1
+uncertainty_weight: 1.0
+

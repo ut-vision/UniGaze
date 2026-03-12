@@ -1,0 +1,4 @@
+_target_: criteria.gaze_loss.AngularGazeLoss
+reduction: mean
+eps: 1e-7
+

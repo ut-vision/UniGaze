@@ -349,8 +349,26 @@ class SimpleTrainer(nn.Module):
 				output_dict = self.model(input_var)
 				pred_gaze = output_dict['pred_gaze']
 				errors_dict['error_s_gaze'] = np.mean(angular_error(pred_gaze.cpu().data.numpy(), gaze_var.cpu().data.numpy()))
-				loss_s_gaze = self.gaze_loss(pred_gaze, gaze_var) 
+				
+				# Handle different loss function signatures
+				if hasattr(self.gaze_loss, 'forward'):
+					# Check if loss expects uncertainty information
+					if 'log_var' in output_dict or 'uncertainty' in output_dict:
+						# Uncertainty-aware loss
+						loss_s_gaze = self.gaze_loss(output_dict, gaze_var)
+					else:
+						# Standard loss
+						loss_s_gaze = self.gaze_loss(pred_gaze, gaze_var)
+				else:
+					# Fallback to standard
+					loss_s_gaze = self.gaze_loss(pred_gaze, gaze_var)
+				
 				losses_dict['loss_s_gaze'] = loss_s_gaze.item()
+				
+				# Log uncertainty if available
+				if 'uncertainty' in output_dict:
+					uncertainty_mean = output_dict['uncertainty'].mean().item()
+					losses_dict['uncertainty_mean'] = uncertainty_mean
 				self.update_meters({
 					'errors_s_gaze': (errors_dict['error_s_gaze'], batch_size),
 					'losses_s_gaze': (losses_dict['loss_s_gaze'], batch_size),

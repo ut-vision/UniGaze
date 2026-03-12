@@ -1,0 +1,10 @@
+net_config:
+  _target_: models.vit.mae_gaze.MAE_Gaze
+  model_type: vit_b_16
+  global_pool: false
+  drop_path_rate: 0.1
+  custom_pretrained_path: null
+  head_type: multi_scale
+  return_attention: false
+  use_uncertainty: false
+

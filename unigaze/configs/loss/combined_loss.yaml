@@ -1,0 +1,5 @@
+_target_: criteria.gaze_loss.CombinedGazeLoss
+angular_weight: 1.0
+l1_weight: 0.1
+loss_type: l1
+
